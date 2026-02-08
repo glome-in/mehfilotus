@@ -1,0 +1,99 @@
+/* Ethnic Navbar */
+.ethnic-navbar {
+    background: #fffaf6;
+    border-bottom: 1px solid #eee;
+}
+
+/* Top Row */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.brand-logo {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #7a1f3d;
+    text-decoration: none;
+}
+
+/* Search Bar */
+.nav-center {
+    position: relative;
+    width: 40%;
+}
+
+.nav-center input {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    border-radius: 30px;
+    border: 1px solid #e0cfc2;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+}
+
+.nav-center input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #7a1f3d;
+    cursor: pointer;
+}
+
+/* Right Icons */
+.nav-right a {
+    margin-left: 18px;
+    font-size: 20px;
+    color: #7a1f3d;
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    opacity: 0.7;
+}
+
+/* Category Menu */
+.category-bar {
+    background: #7a1f3d;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 10px 0;
+}
+
+.category-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.category-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-center {
+        display: none;
+    }
+
+    .category-bar {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-left: 12px;
+    }
+}
