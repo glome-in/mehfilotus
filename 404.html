@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 | Mehfilotus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --gold: #f7b72c;
+            --maroon: #7a1f3d;
+            --cream: #f6f4ee;
+            --dark: #3b1d2a;
+            --soft: #6b4a57;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Cambria, Georgia, 'Times New Roman', serif;
+            background: linear-gradient(135deg, #fffaf2, var(--cream));
+            color: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: var(--white);
+            border-radius: 30px;
+            padding: 80px 40px;
+            text-align: center;
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at top right, rgba(247, 183, 44, 0.25), transparent 60%),
+                radial-gradient(circle at bottom left, rgba(122, 31, 61, 0.18), transparent 60%);
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 110px;
+            margin: 0;
+            color: var(--maroon);
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 34px;
+            margin: 20px 0 10px;
+            color: var(--dark);
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--soft);
+            max-width: 620px;
+            margin: 0 auto 40px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 34px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .btn-home {
+            background: var(--maroon);
+            color: var(--white);
+        }
+
+        .btn-home:hover {
+            background: #61152f;
+        }
+
+        .btn-shop {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            background: transparent;
+        }
+
+        .btn-shop:hover {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        .brand {
+            margin-top: 60px;
+            font-size: 14px;
+            color: var(--soft);
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 80px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .container {
+                padding: 50px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>404</h1>
+        <h2>This Mehfil Isn’t Here</h2>
+        <p>
+            The page you’re looking for seems to have wandered away,
+            like a missing jewel from a festive set.
+            Let’s take you back to something beautiful.
+        </p>
+
+        <div class="actions">
+            <a href="index.html" class="btn btn-home">🏠 Back to Home</a>
+            <a href="index.html#featured-products" class="btn btn-shop">🛍 Continue Shopping</a>
+        </div>
+
+        <div class="brand">
+            © 2026 <span>Mehfilotus</span> · Celebrating Ethnic Elegance
+        </div>
+    </div>
+
+</body>
+
+</html>
