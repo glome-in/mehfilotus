@@ -1,0 +1,125 @@
+.ethnic-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background:  #f6f4ee;
+}
+
+/* Top Row */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+        /* desktop */
+}
+
+/* Search Bar */
+.nav-center {
+    position: relative;
+    width: 40%;
+}
+
+.nav-center input {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    border-radius: 30px;
+    border: 1px solid #e0cfc2;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+}
+
+.nav-center input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #7a1f3d;
+    cursor: pointer;
+}
+
+.nav-right {
+    margin-right: 20px;
+}
+
+/* Right Icons */
+.nav-right a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #7a1f3d;
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px){
+
+    .logo-img {
+        width: 36px;
+        height: 36px;
+    }
+        .nav-container {
+            flex-wrap: wrap;
+        }
+    
+        /* FIRST ROW */
+        .nav-left {
+            order: 1;
+        }
+    
+        .nav-right {
+            order: 2;
+            margin-right: 5px;
+        }
+
+        .nav-right a {
+            margin-left: 5px;
+        }
+    
+        /* SECOND ROW */
+        .nav-center {
+            order: 3;
+            width: 100%;
+            padding-bottom: 5px;
+        }
+    
+}
+
+/* Logo container */
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Logo image */
+.logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Brand text */
+.logo-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #f7b72c;
+    line-height: 1;
+    font-weight: 700;
+    margin-left: 0px;
+}
