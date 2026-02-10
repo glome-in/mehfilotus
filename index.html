@@ -4,40 +4,178 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Fashion Store</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <title>Mehfilotus</title>
+    <link rel="icon" href="assets/logo_90_no_bg.png" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="pages/index.html" class="logo">FashionStore</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Footwear</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="nav-icons">
-                <a href="#">&#x1F50D;</a>
-                <a href="#">&#x1F6D2;</a>
+    <nav class="ethnic-navbar">
+        <div class="nav-container">
+
+            <!-- Left: Logo -->
+            <div class="nav-left">
+                <a href="index.html" class="brand-logo">
+                    <img src="assets/logo_no_bg.png" alt="Mehfilotus Logo" class="logo-img">
+                    <span class="logo-text">Mehfilotus</span>
+                </a>
             </div>
+            <!-- Center: Search -->
+            <div class="nav-center">
+                <input type="text" placeholder="Search sarees, kurtas, lehengas..." />
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <!-- Right: Icons -->
+            <div class="nav-right">
+                <a href="home.html" title="Account">👤</a>
+                <a href="#" title="Wishlist">♡</a>
+                <a href="#" title="Cart">🛍</a>
+            </div>
+
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
-            <h1>Valentine Week Sale</h1>
-            <p>Up to 50% off on selected collections</p>
-            <a href="#" class="btn-primary">Shop Now</a>
+        <!-- Category Menu -->
+        <div class="category-bar category-grid">
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Jhumka">
+                <span>Jhumka</span>
+            </a>
+
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Kurtis">
+                <span>Kurti</span>
+            </a>
+
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Lehengas">
+                <span>Lehenga</span>
+            </a>
+
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Bangles">
+                <span>Bangle</span>
+            </a>
+
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Jutti">
+                <span>Jutti</span>
+            </a>
+
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Festive">
+                <span>Festive</span>
+            </a>
+
+            <a href="#" class="category-item">
+                <img src="assets/logo_360.png" alt="Perfume">
+                <span>Perfume</span>
+            </a>
+
         </div>
     </header>
+
+
+    <div class="carousel">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="assets/bangles/img1.png" alt="Ethnic Wear 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/bangles/img2.png" alt="Ethnic Wear 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/lehnga/img1.png" alt=" Ethnic Wear 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/lehnga/img2.png" alt="Ethnic Wear 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/bangles/img3.png" alt="Ethnic Wear 5">
+            </div>
+        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+
+
+
+
+
+    <section class="featured-products">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Handpicked ethnic wear just for you</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <!-- Loader -->
+                    <div class="image-loader"></div>
+                    <!-- Actual image -->
+                    <img src="assets/sarees/saree1.png" alt="Saree 1"
+                        onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                        style="display:none;">
+                </div>
+                <h3>Elegant Silk Saree</h3>
+                <p class="price">₹3,499</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="assets/sarees/saree1.png" alt="Saree 1">
+                <h3>Elegant Silk Saree</h3>
+                <p class="price">₹3,499</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="assets/lehnga/lehnga1.png" alt="Lehnga 1">
+                <h3>Festive Lehnga</h3>
+                <p class="price">₹7,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="assets/kurtas/kurta1.png" alt="Kurta 1">
+                <h3>Designer Kurta</h3>
+                <p class="price">₹2,299</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="assets/bangles/bangles1.png" alt="Bangles 1">
+                <h3>Traditional Bangles Set</h3>
+                <p class="price">₹1,199</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+
+
+
+
+
 
     <!-- Product Grid -->
     <section class="products container" id="products">
@@ -75,12 +213,268 @@
         </div>
     </section>
 
+    <section class="products container" id="products">
+        <h2>Featured Products</h2>
+        <div class="grid">
+            <!-- Product Card -->
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1" />
+                <h3>Elegant Kurta Set</h3>
+                <p class="price">₹2,199 <span>₹3,499</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Repeat similar cards -->
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2" />
+                <h3>Embroidered Kurta Set</h3>
+                <p class="price">₹1,899 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3" />
+                <h3>Stylish Footwear</h3>
+                <p class="price">₹1,499 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Product 4" />
+                <h3>Printed Saree</h3>
+                <p class="price">₹1,899 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products container" id="products">
+        <h2>Featured Products</h2>
+        <div class="grid">
+            <!-- Product Card -->
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1" />
+                <h3>Elegant Kurta Set</h3>
+                <p class="price">₹2,199 <span>₹3,499</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Repeat similar cards -->
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2" />
+                <h3>Embroidered Kurta Set</h3>
+                <p class="price">₹1,899 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3" />
+                <h3>Stylish Footwear</h3>
+                <p class="price">₹1,499 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Product 4" />
+                <h3>Printed Saree</h3>
+                <p class="price">₹1,899 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products container" id="products">
+        <h2>Featured Products</h2>
+        <div class="grid">
+            <!-- Product Card -->
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1" />
+                <h3>Elegant Kurta Set</h3>
+                <p class="price">₹2,199 <span>₹3,499</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Repeat similar cards -->
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2" />
+                <h3>Embroidered Kurta Set</h3>
+                <p class="price">₹1,899 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3" />
+                <h3>Stylish Footwear</h3>
+                <p class="price">₹1,499 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Product 4" />
+                <h3>Printed Saree</h3>
+                <p class="price">₹1,899 <span>₹4,099</span></p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer container">
-        <p>&copy; 2026 FashionStore. All Rights Reserved.</p>
+    <footer class="ethnic-footer">
+        <div class="footer-container">
+
+            <!-- Logo & About -->
+            <div class="footer-section about">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/logo_no_bg.png" alt="Mehfilotus Logo">
+                    <span>Mehfilotus</span>
+                </a>
+                <p>Discover the finest ethnic wear – sarees, lehengas, kurtas & more. Celebrate tradition with style!
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sarees</a></li>
+                    <li><a href="#">Lehengas</a></li>
+                    <li><a href="#">Kurtas</a></li>
+                    <li><a href="#">Bangles</a></li>
+                    <li><a href="#">Festive Collections</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-section support">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>📍 123 Ethnic Street, Jaipur, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ support@mehfilotus.com</p>
+
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mehfilotus" target="_blank" class="social-link facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mehfilotus" target="_blank" class="social-link instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/mehfilotus" target="_blank" class="social-link twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@mehfilotus" target="_blank" class="social-link youtube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-newsletter">
+            <h3>Subscribe for Exclusive Updates</h3>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <!-- Developer Credit -->
+        <div class="footer-dev">
+            <a href="https://glome.in" target="_blank" class="dev-link">
+                <img src="https://glome.in/assets/high_logo.png" alt="Glome Logo" class="dev-logo">
+                <span>Developed by Glome.in – Crafting digital experiences for modern businesses.</span>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2026 Mehfilotus. All Rights Reserved. Designed with ❤️ for ethnic wear lovers.</p>
+        </div>
     </footer>
 
+
     <script src="js/scripts.js"></script>
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+        let index = 0;
+        let interval;
+
+        // total real slides (exclude clone)
+        const totalSlides = slides.length - 1;
+
+        function updateSlide(animate = true) {
+            track.style.transition = animate ? 'transform 0.8s ease-in-out' : 'none';
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        // Auto-slide
+        function startAutoSlide() {
+            interval = setInterval(() => {
+                index++;
+                updateSlide(true);
+
+                // If we reach the clone, reset instantly
+                if (index === totalSlides) {
+                    setTimeout(() => {
+                        index = 0;
+                        updateSlide(false); // jump to first slide
+                    }, 800); // match transition duration
+                }
+            }, 3000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(interval);
+        }
+
+        // Manual navigation
+        function moveSlide(direction) {
+            stopAutoSlide();
+
+            index += direction;
+
+            // wrap around manually
+            if (index < 0) {
+                index = totalSlides - 1;
+            } else if (index >= totalSlides) {
+                index = 0;
+            }
+
+            updateSlide(true);
+
+            startAutoSlide();
+        }
+
+        // start autoplay
+        startAutoSlide();
+
+        // optional: pause on hover
+        const carousel = document.querySelector('.carousel');
+        carousel.addEventListener('mouseenter', stopAutoSlide);
+        carousel.addEventListener('mouseleave', startAutoSlide);
+
+    </script>
+
+
+
+
+
 </body>
 
 </html>
